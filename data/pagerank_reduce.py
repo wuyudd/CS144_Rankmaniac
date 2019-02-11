@@ -25,8 +25,8 @@ def reducer(key,vals):
 
 data = collections.defaultdict(list)
 for line in sys.stdin:
-    key,val = readline(line)
-    s = line.split('\t')
+    data = line.split('\t')
+    key,val = data[0],data[1]
     data[key].append(val)
 
 for key,val in data.items():
