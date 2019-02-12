@@ -20,7 +20,7 @@ def reducer(key,vals):
 	sec = sec.split(',')
 	sec[1] = sec[0]
 	sec[0] = str(sum)
-	s = fir+'\t'+','.join(sec)
+	s = fir+'\t'+','.join(sec)+'\n'
 	sys.stdout.write(s)
 
 data = collections.defaultdict(list)
