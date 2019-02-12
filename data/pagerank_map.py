@@ -43,7 +43,7 @@ def mapper(node_id, list_of_values):
     graph_info = str(curr_pr) + "," + str(prev_pr) + ","
 
     if out_deg == 0: # no out links
-        curr_contri = curr_pr * (alpha * 1)
+        curr_contri = curr_pr * (alpha * 1.0)
         sys.stdout.write("%d@NodeId:%s\t+%f\n" % (iteration, node_id, curr_contri))
 
     for out_node in node_out_links: # contribution to each out link
