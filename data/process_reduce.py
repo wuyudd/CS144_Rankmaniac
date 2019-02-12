@@ -27,9 +27,10 @@ for line in sys.stdin:
 
 klargest_cur = heapq.nlargest(20,all_curr_pr)
 klargest_prev = heapq.nlargest(20,all_prev_pr)
-if  itr == 1 or klargest_cur == klargest_prev:
+if  itr == 50 or klargest_cur == klargest_prev:
 	for rank,node in klargest_cur:
-		sys.stdout.write('FinalRank:'+str(rank)+'\t'+str(node)+'\n')
+		#sys.stdout.write('FinalRank:'+str(rank)+'\t'+str(node)+'\n')
+		sys.stdout.write('FinalRank:'+str(rank)+'\t'+str(node)+", iter=" + str(itr) + '\n')
 else:
 	for line in out:
 		sys.stdout.write(line)

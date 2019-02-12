@@ -11,7 +11,6 @@ def reducer(key,vals):
 	alpha = 0.85
 	sum = 1-alpha
 	fir = key
-	sec = ''
 	for v in vals:
 		if v[0] == '+':
 			sum += float(v[1:])
@@ -20,7 +19,11 @@ def reducer(key,vals):
 	sec = sec.split(',')
 	sec[1] = sec[0]
 	sec[0] = str(sum)
-	s = fir+'\t'+','.join(sec)+'\n'
+
+	if len(sec) == 2:
+		s = fir+'\t'+','.join(sec) + '\n'
+	else:
+		s = fir+'\t'+','.join(sec)
 	sys.stdout.write(s)
 
 data = collections.defaultdict(list)

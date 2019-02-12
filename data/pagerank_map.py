@@ -12,12 +12,11 @@ def read_in(line):
     line format: iter@NodeId:i	curr_pr, prev_pr, out_node_1, out_node_2, ...
     '''
     raw_info = line.split('@')
-
-    iter = raw_info[0] # iteration time
-    if len(iter) == 1:
-        iteration = int(iter) + 1
-    else:
+    if len(raw_info) == 1:
         iteration = 1
+    else:
+        iter = raw_info[0] # iteration time
+        iteration = int(iter) + 1
 
     ori_info = raw_info[-1] # NodeId:i	curr_pr, prev_pr, out_node_1, out_node_2, ...
     info = ori_info.split()
@@ -40,7 +39,7 @@ def mapper(node_id, list_of_values):
     out_deg = len(node_out_links)
     #sys.stdout.write(str(out_deg) + "\n")
 
-    graph_info = str(curr_pr) + "," + str(prev_pr) + ","
+    graph_info = str(curr_pr) + "," + str(prev_pr)
 
     if out_deg == 0: # no out links
         curr_contri = curr_pr * (alpha * 1.0)
@@ -51,9 +50,8 @@ def mapper(node_id, list_of_values):
         #sys.stdout.write(str(p_ij) + "\n")
         curr_contri = curr_pr * (alpha * p_ij)
         sys.stdout.write("%d@NodeId:%s\t+%f\n" % (iteration, out_node, curr_contri))
-        graph_info = graph_info + str(out_node) + ","
+        graph_info = graph_info + "," + str(out_node)
 
-    graph_info = graph_info[:-1]
     sys.stdout.write("%d@NodeId:%s\t%s\n" % (iteration, node_id, graph_info))
 
 
