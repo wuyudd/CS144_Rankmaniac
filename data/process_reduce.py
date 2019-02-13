@@ -15,7 +15,16 @@ def readline(line):
 
 	return int(node), float(curr_pr), float(prev_pr),int(itr)
 
-k = 40
+def average_change_rate(klargest_cur,klargest_prev):
+	sum = 0
+	for i in range(len(klargest_cur)):
+		sum += abs(klargest_cur[i][0] - klargest_prev[i][0])/klargest_prev[i][0]
+	return sum/len(klargest_cur)
+
+
+k = 20
+settling_rate = 0.05
+
 all_curr_pr = []
 all_prev_pr = []
 itr = 0
@@ -30,13 +39,12 @@ for line in sys.stdin:
 klargest_cur = heapq.nlargest(k,all_curr_pr)
 klargest_prev = heapq.nlargest(k,all_prev_pr)
 
-prev_top_node = [node for rank,node in klargest_prev]
-cur_top_node = [node for rank,node in klargest_cur]
+#prev_top_node = [node for rank,node in klargest_prev]
+#cur_top_node = [node for rank,node in klargest_cur]
+#prev_top_node_set = set(prev_top_node)
+#cur_top_node_set = set(cur_top_node)
 
-prev_top_node_set = set(prev_top_node)
-cur_top_node_set = set(cur_top_node)
-
-if  itr == 50 or prev_top_node_set == cur_top_node_set:
+if  itr == 50 or average_change_rate(klargest_cur,klargest_prev) <= settling_rate:
 	for rank,node in klargest_cur:
 		#sys.stdout.write('FinalRank:'+str(rank)+'\t'+str(node)+'\n')
 		sys.stdout.write('FinalRank:'+str(rank)+'\t'+str(node)+", iter=" + str(itr) +'\n')
