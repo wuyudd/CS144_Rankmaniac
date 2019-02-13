@@ -1,0 +1,67 @@
+1. node set == k =40 -big
+FinalRank:7.490559	5832, iter=3
+FinalRank:7.271477	2372, iter=3
+FinalRank:6.674949	13770, iter=3
+FinalRank:6.20071	5428, iter=3
+FinalRank:5.917625	4888, iter=3
+FinalRank:5.35456	6301, iter=3
+FinalRank:5.248333	599, iter=3
+FinalRank:5.20344	7260, iter=3
+FinalRank:5.161064	12942, iter=3
+FinalRank:5.153021	1870, iter=3
+FinalRank:5.132578	6302, iter=3
+FinalRank:5.065565	21076, iter=3
+FinalRank:4.8653	20810, iter=3
+FinalRank:4.841352	7341, iter=3
+FinalRank:4.771965	10724, iter=3
+FinalRank:4.71729	12960, iter=3
+FinalRank:4.600948	2645, iter=3
+FinalRank:4.598633	6871, iter=3
+FinalRank:4.518276	439, iter=3
+FinalRank:4.515742	22640, iter=3
+FinalRank:4.473758	7772, iter=3
+FinalRank:4.464915	21525, iter=3
+FinalRank:4.424253	3990, iter=3
+FinalRank:4.410465	36967, iter=3
+FinalRank:4.395884	23628, iter=3
+FinalRank:4.381675	8299, iter=3
+FinalRank:4.275805	18001, iter=3
+FinalRank:4.246912	13145, iter=3
+FinalRank:4.246851	6748, iter=3
+FinalRank:4.227693	9509, iter=3
+FinalRank:4.18918	17271, iter=3
+FinalRank:4.130856	2793, iter=3
+FinalRank:4.110725	37344, iter=3
+FinalRank:4.101792	47843, iter=3
+FinalRank:4.090747	20185, iter=3
+FinalRank:3.969911	43720, iter=3
+FinalRank:3.961274	15444, iter=3
+FinalRank:3.909842	13929, iter=3
+FinalRank:3.858308	22679, iter=3
+FinalRank:3.856797	7996, iter=3
+DADA!
+
+2. node order == no=20 -big
+不一定和答案一样，因为只比较了current 和 previous的前20个nodes是否排序一样
+FinalRank:7.665609	2372, iter=7
+FinalRank:7.658055	5832, iter=7
+FinalRank:6.796102	13770, iter=7
+FinalRank:6.515928	5428, iter=7
+FinalRank:6.043583	4888, iter=7
+FinalRank:5.787775	6301, iter=7
+FinalRank:5.558022	599, iter=7
+FinalRank:5.555848	6302, iter=7
+FinalRank:5.378333	1870, iter=7
+FinalRank:5.315071	7260, iter=7
+FinalRank:5.232473	12942, iter=7
+FinalRank:5.136676	21076, iter=7
+FinalRank:4.940574	20810, iter=7
+FinalRank:4.926079	10724, iter=7
+FinalRank:4.921304	7341, iter=7
+FinalRank:4.831604	2645, iter=7
+FinalRank:4.816131	12960, iter=7
+FinalRank:4.814677	6871, iter=7
+FinalRank:4.79668	7772, iter=7
+FinalRank:4.599635	439, iter=7
+DADA!
+
