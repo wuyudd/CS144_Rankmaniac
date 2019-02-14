@@ -1,0 +1,184 @@
+1. node set == k =40 -big
+FinalRank:7.490559	5832, iter=3
+FinalRank:7.271477	2372, iter=3
+FinalRank:6.674949	13770, iter=3
+FinalRank:6.20071	5428, iter=3
+FinalRank:5.917625	4888, iter=3
+FinalRank:5.35456	6301, iter=3
+FinalRank:5.248333	599, iter=3
+FinalRank:5.20344	7260, iter=3
+FinalRank:5.161064	12942, iter=3
+FinalRank:5.153021	1870, iter=3
+FinalRank:5.132578	6302, iter=3
+FinalRank:5.065565	21076, iter=3
+FinalRank:4.8653	20810, iter=3
+FinalRank:4.841352	7341, iter=3
+FinalRank:4.771965	10724, iter=3
+FinalRank:4.71729	12960, iter=3
+FinalRank:4.600948	2645, iter=3
+FinalRank:4.598633	6871, iter=3
+FinalRank:4.518276	439, iter=3
+FinalRank:4.515742	22640, iter=3
+FinalRank:4.473758	7772, iter=3
+FinalRank:4.464915	21525, iter=3
+FinalRank:4.424253	3990, iter=3
+FinalRank:4.410465	36967, iter=3
+FinalRank:4.395884	23628, iter=3
+FinalRank:4.381675	8299, iter=3
+FinalRank:4.275805	18001, iter=3
+FinalRank:4.246912	13145, iter=3
+FinalRank:4.246851	6748, iter=3
+FinalRank:4.227693	9509, iter=3
+FinalRank:4.18918	17271, iter=3
+FinalRank:4.130856	2793, iter=3
+FinalRank:4.110725	37344, iter=3
+FinalRank:4.101792	47843, iter=3
+FinalRank:4.090747	20185, iter=3
+FinalRank:3.969911	43720, iter=3
+FinalRank:3.961274	15444, iter=3
+FinalRank:3.909842	13929, iter=3
+FinalRank:3.858308	22679, iter=3
+FinalRank:3.856797	7996, iter=3
+DADA!
+
+2. node order == no=20 -big
+不一定和答案一样，因为只比较了current 和 previous的前20个nodes是否排序一样
+FinalRank:7.665609	2372, iter=7
+FinalRank:7.658055	5832, iter=7
+FinalRank:6.796102	13770, iter=7
+FinalRank:6.515928	5428, iter=7
+FinalRank:6.043583	4888, iter=7
+FinalRank:5.787775	6301, iter=7
+FinalRank:5.558022	599, iter=7
+FinalRank:5.555848	6302, iter=7
+FinalRank:5.378333	1870, iter=7
+FinalRank:5.315071	7260, iter=7
+FinalRank:5.232473	12942, iter=7
+FinalRank:5.136676	21076, iter=7
+FinalRank:4.940574	20810, iter=7
+FinalRank:4.926079	10724, iter=7
+FinalRank:4.921304	7341, iter=7
+FinalRank:4.831604	2645, iter=7
+FinalRank:4.816131	12960, iter=7
+FinalRank:4.814677	6871, iter=7
+FinalRank:4.79668	7772, iter=7
+FinalRank:4.599635	439, iter=7
+DADA!
+
+node order == no=20 -small
+FinalRank:7.147575	21, iter=8
+FinalRank:2.188253	31, iter=8
+FinalRank:1.974252	72, iter=8
+FinalRank:1.764408	63, iter=8
+FinalRank:1.7062430000000002	9, iter=8
+FinalRank:1.6696489999999997	78, iter=8
+FinalRank:1.649432	92, iter=8
+FinalRank:1.546437	71, iter=8
+FinalRank:1.4739639999999998	45, iter=8
+FinalRank:1.42	95, iter=8
+FinalRank:1.361603	27, iter=8
+FinalRank:1.360808	86, iter=8
+FinalRank:1.344804	37, iter=8
+FinalRank:1.2993070000000002	83, iter=8
+FinalRank:1.2971880000000002	88, iter=8
+FinalRank:1.255123	1, iter=8
+FinalRank:1.238375	15, iter=8
+FinalRank:1.232496	70, iter=8
+FinalRank:1.209512	80, iter=8
+FinalRank:1.205435	99, iter=8
+DADA!
+
+node order == no=20 -med
+FinalRank:6.803010000000002	16, iter=9
+FinalRank:6.645168	83, iter=9
+FinalRank:6.202937	17, iter=9
+FinalRank:6.167094	47, iter=9
+FinalRank:6.113957000000003	27, iter=9
+FinalRank:5.841307	225, iter=9
+FinalRank:5.661623000000003	84, iter=9
+FinalRank:5.534342999999997	272, iter=9
+FinalRank:5.527865000000004	135, iter=9
+FinalRank:5.351252000000001	22, iter=9
+FinalRank:5.148785000000002	76, iter=9
+FinalRank:5.058539999999999	12, iter=9
+FinalRank:5.014242000000003	178, iter=9
+FinalRank:4.664054999999998	342, iter=9
+FinalRank:4.543912999999999	219, iter=9
+FinalRank:4.330000000000001	91, iter=9
+FinalRank:4.296119	222, iter=9
+FinalRank:4.247248000000002	78, iter=9
+FinalRank:4.200981	229, iter=9
+FinalRank:4.149665999999999	273, iter=9
+DADA!
+
+3. 设置前20个node的相对误差 < 0.05 -big
+FinalRank:7.602701	5832, iter=4
+FinalRank:7.542365	2372, iter=4
+FinalRank:6.753842000000001	13770, iter=4
+FinalRank:6.4233080000000005	5428, iter=4
+FinalRank:6.003267	4888, iter=4
+FinalRank:5.649926000000001	6301, iter=4
+FinalRank:5.456444	599, iter=4
+FinalRank:5.42071	6302, iter=4
+FinalRank:5.303348	1870, iter=4
+FinalRank:5.281357	7260, iter=4
+FinalRank:5.211255	12942, iter=4
+FinalRank:5.114266	21076, iter=4
+FinalRank:4.918059	20810, iter=4
+FinalRank:4.896844	7341, iter=4
+FinalRank:4.882842	10724, iter=4
+FinalRank:4.791183	12960, iter=4
+FinalRank:4.757246	2645, iter=4
+FinalRank:4.744515	6871, iter=4
+FinalRank:4.686394	7772, iter=4
+FinalRank:4.575331	439, iter=4
+DADA!
+
+设置前20个node的相对误差 < 0.02 -big
+FinalRank:7.642154000000001	5832, iter=5
+FinalRank:7.630066	2372, iter=5
+FinalRank:6.7833120000000005	13770, iter=5
+FinalRank:6.4864500000000005	5428, iter=5
+FinalRank:6.031447999999999	4888, iter=5
+FinalRank:5.748947	6301, iter=5
+FinalRank:5.526877000000001	599, iter=5
+FinalRank:5.517786	6302, iter=5
+FinalRank:5.355418	1870, iter=5
+FinalRank:5.305171	7260, iter=5
+FinalRank:5.226385	12942, iter=5
+FinalRank:5.129862	21076, iter=5
+FinalRank:4.9341219999999995	20810, iter=5
+FinalRank:4.913968	7341, iter=5
+FinalRank:4.913605	10724, iter=5
+FinalRank:4.808679	2645, iter=5
+FinalRank:4.807905	12960, iter=5
+FinalRank:4.794266	6871, iter=5
+FinalRank:4.761504	7772, iter=5
+FinalRank:4.592466	439, iter=5
+DADA!
+
+设置前20个node的相对误差 < 0.01 -big
+FinalRank:7.642154000000001	5832, iter=5
+FinalRank:7.630066	2372, iter=5
+FinalRank:6.7833120000000005	13770, iter=5
+FinalRank:6.4864500000000005	5428, iter=5
+FinalRank:6.031447999999999	4888, iter=5
+FinalRank:5.748947	6301, iter=5
+FinalRank:5.526877000000001	599, iter=5
+FinalRank:5.517786	6302, iter=5
+FinalRank:5.355418	1870, iter=5
+FinalRank:5.305171	7260, iter=5
+FinalRank:5.226385	12942, iter=5
+FinalRank:5.129862	21076, iter=5
+FinalRank:4.9341219999999995	20810, iter=5
+FinalRank:4.913968	7341, iter=5
+FinalRank:4.913605	10724, iter=5
+FinalRank:4.808679	2645, iter=5
+FinalRank:4.807905	12960, iter=5
+FinalRank:4.794266	6871, iter=5
+FinalRank:4.761504	7772, iter=5
+FinalRank:4.592466	439, iter=5
+DADA!
+
+设置前20个node的相对误差 < 0.05 -med
+
