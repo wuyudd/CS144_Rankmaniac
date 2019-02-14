@@ -11,6 +11,7 @@ def reducer(key,vals):
 	alpha = 0.85
 	sum = 1-alpha
 	fir = key
+	sec = ""
 	for v in vals:
 		if v[0] == '+':
 			sum += float(v[1:])
