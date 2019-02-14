@@ -32,6 +32,7 @@ all_prev_pr = []
 itr = 0
 out = []
 data = collections.defaultdict(list)
+
 for line in sys.stdin:
 	node, curr_pr, prev_pr, itr, node_out_links = readline(line)
 	all_curr_pr.append((curr_pr,node))
@@ -55,7 +56,7 @@ cur_top_node_set = set(cur_top_node)
 #if itr == 50 or average_change_rate(klargest_cur,klargest_prev) <= settling_rate:
 #if iter == 50 or prev_top_node == cur_top_node:
 if iter == 50 or prev_top_node_set == cur_top_node_set:
-	if prev_top_node[:20] == cur_top_node[:20]
+	if prev_top_node[:20] == cur_top_node[:20]:
 		for rank,node in klargest_cur:
 			#sys.stdout.write('FinalRank:'+str(rank)+'\t'+str(node)+'\n')
 			sys.stdout.write('FinalRank:'+str(rank)+'\t'+str(node)+", iter=" + str(itr) +'\n')
