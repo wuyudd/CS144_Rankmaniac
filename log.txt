@@ -1,4 +1,4 @@
-1. node set == k =40 -big
+1. node set == k =40 -big dataset
 FinalRank:7.490559	5832, iter=3
 FinalRank:7.271477	2372, iter=3
 FinalRank:6.674949	13770, iter=3
@@ -41,8 +41,10 @@ FinalRank:3.858308	22679, iter=3
 FinalRank:3.856797	7996, iter=3
 DADA!
 
-2. node order == no=20 -big
-不一定和答案一样，因为只比较了current 和 previous的前20个nodes是否排序一样
+2. node order == no=20 -big dataset
+NOTE: 
+It is not necessarily the same with the correct answer, as it only compares whether the current top 20 nodes are the same with the previous top 20 nodes.
+
 FinalRank:7.665609	2372, iter=7
 FinalRank:7.658055	5832, iter=7
 FinalRank:6.796102	13770, iter=7
@@ -65,7 +67,7 @@ FinalRank:4.79668	7772, iter=7
 FinalRank:4.599635	439, iter=7
 DADA!
 
-node order == no=20 -small
+node order == no=20 -small dataset
 FinalRank:7.147575	21, iter=8
 FinalRank:2.188253	31, iter=8
 FinalRank:1.974252	72, iter=8
@@ -88,7 +90,7 @@ FinalRank:1.209512	80, iter=8
 FinalRank:1.205435	99, iter=8
 DADA!
 
-node order == no=20 -med
+node order == no=20 -med dataset
 FinalRank:6.803010000000002	16, iter=9
 FinalRank:6.645168	83, iter=9
 FinalRank:6.202937	17, iter=9
@@ -112,54 +114,57 @@ FinalRank:4.149665999999999	273, iter=9
 DADA!
 
 3. 
-设置前20个node的相对误差 < 0.10 -big
-FinalRank:7.490559	5832, iter=3
-FinalRank:7.271477	2372, iter=3
-FinalRank:6.674949	13770, iter=3
-FinalRank:6.20071	5428, iter=3
-FinalRank:5.917625	4888, iter=3
-FinalRank:5.35456	6301, iter=3
-FinalRank:5.248333	599, iter=3
-FinalRank:5.20344	7260, iter=3
-FinalRank:5.161064	12942, iter=3
-FinalRank:5.153021	1870, iter=3
-FinalRank:5.132578	6302, iter=3
-FinalRank:5.065565	21076, iter=3
-FinalRank:4.8653	20810, iter=3
-FinalRank:4.841352	7341, iter=3
-FinalRank:4.771965	10724, iter=3
-FinalRank:4.71729	12960, iter=3
-FinalRank:4.600948	2645, iter=3
-FinalRank:4.598633	6871, iter=3
-FinalRank:4.518276	439, iter=3
-FinalRank:4.515742	22640, iter=3
+Set the Relative error THRESHOLD of the top 20 nodes< 0.10 -big dataset
+wrong #: 12
+FinalRank:7.490559	5832, iter=3 2372
+FinalRank:7.271477	2372, iter=3 5832
+FinalRank:6.674949	13770, iter=3 13770
+FinalRank:6.20071	5428, iter=3 5428
+FinalRank:5.917625	4888, iter=3 4888
+FinalRank:5.35456	6301, iter=3 6301
+FinalRank:5.248333	599, iter=3 599
+FinalRank:5.20344	7260, iter=3 6302
+FinalRank:5.161064	12942, iter=3 1870
+FinalRank:5.153021	1870, iter=3 7260
+FinalRank:5.132578	6302, iter=3 12942
+FinalRank:5.065565	21076, iter=3 21076
+FinalRank:4.8653	20810, iter=3 20810
+FinalRank:4.841352	7341, iter=3 10724
+FinalRank:4.771965	10724, iter=3 7341
+FinalRank:4.71729	12960, iter=3 2645
+FinalRank:4.600948	2645, iter=3 12960
+FinalRank:4.598633	6871, iter=3 6871
+FinalRank:4.518276	439, iter=3 7772
+FinalRank:4.515742	22640, iter=3 439
 DADA!
 
-设置前20个node的相对误差 < 0.05 -big
-FinalRank:7.602701	5832, iter=4
-FinalRank:7.542365	2372, iter=4
-FinalRank:6.753842000000001	13770, iter=4
-FinalRank:6.4233080000000005	5428, iter=4
-FinalRank:6.003267	4888, iter=4
-FinalRank:5.649926000000001	6301, iter=4
-FinalRank:5.456444	599, iter=4
-FinalRank:5.42071	6302, iter=4
-FinalRank:5.303348	1870, iter=4
-FinalRank:5.281357	7260, iter=4
-FinalRank:5.211255	12942, iter=4
-FinalRank:5.114266	21076, iter=4
-FinalRank:4.918059	20810, iter=4
-FinalRank:4.896844	7341, iter=4
-FinalRank:4.882842	10724, iter=4
-FinalRank:4.791183	12960, iter=4
-FinalRank:4.757246	2645, iter=4
-FinalRank:4.744515	6871, iter=4
-FinalRank:4.686394	7772, iter=4
-FinalRank:4.575331	439, iter=4
+Set the Relative error THRESHOLD of the top 20 nodes< 0.05 -big dataset
+wrong #: 6
+FinalRank:7.602701	5832, iter=4 2372
+FinalRank:7.542365	2372, iter=4 5832
+FinalRank:6.753842000000001	13770, iter=4 13770
+FinalRank:6.4233080000000005	5428, iter=4 5428
+FinalRank:6.003267	4888, iter=4 4888
+FinalRank:5.649926000000001	6301, iter=4 6301
+FinalRank:5.456444	599, iter=4 599
+FinalRank:5.42071	6302, iter=4 6302
+FinalRank:5.303348	1870, iter=4 1870
+FinalRank:5.281357	7260, iter=4 7260
+FinalRank:5.211255	12942, iter=4 12942
+FinalRank:5.114266	21076, iter=4 21076
+FinalRank:4.918059	20810, iter=4 20810
+FinalRank:4.896844	7341, iter=4 10724
+FinalRank:4.882842	10724, iter=4 7341
+FinalRank:4.791183	12960, iter=4 2645
+FinalRank:4.757246	2645, iter=4 12960
+FinalRank:4.744515	6871, iter=4 6871
+FinalRank:4.686394	7772, iter=4 7772
+FinalRank:4.575331	439, iter=4 439
 DADA!
 
 
-设置前20个node的相对误差 < 0.02 -big
+Set the Relative error THRESHOLD of the top 20 nodes< 0.02 -big dataset
+wrong #: 4
 FinalRank:7.642154000000001	5832, iter=5
 FinalRank:7.630066	2372, iter=5
 FinalRank:6.7833120000000005	13770, iter=5
@@ -182,7 +187,8 @@ FinalRank:4.761504	7772, iter=5
 FinalRank:4.592466	439, iter=5
 DADA!
 
-设置前20个node的相对误差 < 0.01 -big
+Set the Relative error THRESHOLD of the top 20 nodes< 0.01 -big dataset
+wrong # : 4
 FinalRank:7.642154000000001	5832, iter=5
 FinalRank:7.630066	2372, iter=5
 FinalRank:6.7833120000000005	13770, iter=5
@@ -206,7 +212,8 @@ FinalRank:4.592466	439, iter=5
 DADA!
 
 
-4. 减少图，当 前40个 set ==，缩图 只跑这40个node，并把out-nodes里不在这40个的删掉。-big
+4. Cut the graph, when the top 40 nodes set are the same for current and previous, then we continue the iteration just on these 40 nodes, and we cut off the out-nodes of these 40 nodes which are not in the 40 nodes. -big dataset
+
 FinalRank:4.544312	6301, iter=7
 FinalRank:3.962359	13770, iter=7
 FinalRank:3.567031	4888, iter=7
