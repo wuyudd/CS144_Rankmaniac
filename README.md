@@ -1,5 +1,7 @@
 # CS_144_Rankmaniac
 
+// Created and Modified by Yu Wu.
+
 This is the MiniProject 1 for CS144, Caltech.
 
 Group Member: Wen Gu, Sha Sha, Yu Wu.
